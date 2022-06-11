@@ -21,23 +21,56 @@ TABLE OF CONTENTS
 /* See styles/variables.css  */
 
 /*==============================
-|3| UTILITIES
+|3| BASIC ELEMENTS
 ==============================*/
 
-/* See /styles/utilities.css */
+body {
+  position: relative;
+  height: 100vh;
+  background: var(--clr-bg-primary);
+  margin: 0;
+  z-index: -2;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  background: url("../images/bg-pattern-top.svg") no-repeat;
+  background-size: 622px, 622px;
+  background-position: right 43.33vw bottom 58.66vh;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  background: url("../images/bg-pattern-bottom.svg") no-repeat;
+  background-size: 622px, 622px;
+  background-position: left 46.66vw top calc(50vh - 32px);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+@media (min-width: 800px) {
+  body::after,
+  body::before {
+    transform: scale(150%);
+  }
+  body::after {
+    background-position: left 50vw top 50vh;
+  }
+  body::before {
+    background-position: right 52vw bottom 50vh;
+  }
+}
 
 /*==============================
-|4| BASIC ELEMENTS
+|4| COMPONENT A
 ==============================*/
 
 /*==============================
-|5| COMPONENT A
-==============================*/
-
-/*==============================
-|6| COMPONENT B ETC
-==============================*/
-
-/*==============================
-|7| MEDIA QUERIES
+|5| MEDIA QUERIES
 ==============================*/
