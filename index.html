@@ -19,20 +19,36 @@
     <link rel="stylesheet" href="styles/global.css" />
 
     <title>Frontend Mentor | Profile card component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    Victor Crest 26 London 80K Followers 803K Likes 1.4K Photos
+    <main>
+      <article class="contact-card">
+        <div class="contact-card__top">
+          <img src="/images/bg-pattern-card.svg" alt="hero-image" />
+        </div>
+        <div class="contact-card__middle">
+          <div class="contact-card__middle__content">
+            <img class="contact-card__middle__content__image" src="images/image-victor.jpg" alt="Image of user" />
+            <h1 class="contact-card__middle__content__header">Victor Crest <span class="contact-card__middle__content__header__sub">26</span></h1>
+            <p class="contact-card__middle__content__location">London</p>
+          </div>
+        </div>
+        <div class="contact-card__bottom">
+          <button class="info-block">
+            <div class="info-block__title">80K</div>
+            <div class="info-block__subtitle">Followers</div>
+          </button>
+          <button class="info-block">
+            <div class="info-block__title">803K</div>
+            <div class="info-block__subtitle">Likes</div>
+          </button>
+          <button class="info-block">
+            <div class="info-block__title">1.4K</div>
+            <div class="info-block__subtitle">Photos</div>
+          </button>
+        </div>
+      </article>
+    </main>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
     </div>

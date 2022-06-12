@@ -5,6 +5,7 @@
   --clr-secondary: hsl(0, 0%, 59%); /* Secondary colour, example: component background */
   --clr-important: hsl(229, 23%, 23%); /* Primary attention in element, example: heading tags. */
   --clr-content: hsl(227, 10%, 46%); /* Used on high-frequency elements, example: body text. */
+  --clr-tertiary: #e8e9ec;
 
   /* Font families */
 
